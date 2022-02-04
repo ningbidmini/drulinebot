@@ -19,7 +19,18 @@ if (!is_null($events['events'])) {
 			// $text = $event['source']['userId'];
 			
 			// $text = "AutoMessesge";
-			$text = $event['message']['text'];
+			switch($event['message']['text']){
+				case '11':
+				  $text = 'OneOne';
+				break;
+				default :
+				  $text = 'Nothing';
+				break;
+			}
+			
+			
+			
+			
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
