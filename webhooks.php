@@ -19,7 +19,7 @@ if (!is_null($events['events'])) {
 			// $text = $event['source']['userId'];
 			
 			// $text = "AutoMessesge";
-			$text = json_encode($event);
+			$text = json_encode($event['message']['text']);
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
