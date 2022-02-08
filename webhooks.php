@@ -25,7 +25,9 @@ if (!is_null($events['events'])) {
 				  'test1'=>'11111',
 				  'test2'=>'22222',
 				  );
-				  $text = json_encode($dataset);
+					
+				  //$text = json_encode($dataset);
+				  $text = '<img src="https://e-portfolio.dru.ac.th/uploads/profile//3690/3690.jpg" />';
 				break;
 				default :
 				  $text = 'Nothing';
