@@ -20,8 +20,12 @@ if (!is_null($events['events'])) {
 			
 			// $text = "AutoMessesge";
 			switch($event['message']['text']){
-				case '11':
-				  $text = 'OneOne';
+				case 'hello':
+				  $dataset = array(
+				  'test1'=>'11111',
+				  'test2'=>'22222',
+				  );
+				  $text = json_encode($dataset);
 				break;
 				default :
 				  $text = 'Nothing';
